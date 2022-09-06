@@ -1,0 +1,19 @@
+broker:
+  'url': 'tcp://mrizt6d1i7mw3.messaging.solace.cloud:55555'
+  'vpn': 'nram-test-vpn-v100'
+  'client' :
+    'username': 'test-user'
+    'password': 'test123'
+
+publisher:
+  'topic': 'test/from/python/1'
+  'num-msgs': 3 
+  'rate': 20
+  'size': 10
+  'delay' : 1
+  'num-clients': 1
+
+subscriber:
+  'queue': 'test-queue'
+  'num-clients': 1
+  'delay' : 10

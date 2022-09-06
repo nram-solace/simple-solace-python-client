@@ -1,0 +1,20 @@
+---
+broker:
+  'url': 'tcp://192.168.160.115:55555'
+  'vpn': 'default'
+  'client':
+    'username': 'default'
+    'password': 'default'
+    'topic': 'test/>'
+publisher:
+  'topic': 'test/1'
+  'num-msgs': 1000
+  'rate': 20#
+  'size': 10240
+  'delay': 1
+  'num-clients': 1
+subscriber:
+  'topics': ['test/>']
+  'queue': 'test-q1'
+  'num-clients': 10
+  'delay': 10
